@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Documentación de uso de Cabañas San Martín</title>
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-magnify.min.css" media="screen" title="no title" charset="utf-8">
   <style media="screen">
     .row{
       padding-top: 33px;
@@ -15,6 +16,14 @@
       <a class="navbar-brand" href="#">Documentación de uso de Cabañas San Martín</a>
       <ul class="nav navbar-nav">
         <li><a href="#novedades">Novedades</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#aparts">Aparts</a></li>
+        <li><a href="#clientes">Clientes</a></li>
+        <li><a href="#contenidos">Contenidos</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+        <li><a href="#tipo-alojamiento">Tipos de Alojamiento</a></li>
+        <li><a href="#tarifas">Tarifas</a></li>
+        <li><a href="#disponibilidad">Disponibilidad</a></li>
       </ul>
   </nav>
   <hr>
@@ -24,14 +33,14 @@
         <h3 class="text-center">Usuario</h3>
         <div class="row text-center">
           <a href="http://cabsanmartin.herokuapp.com" class="btn btn-primary btn-lg" role="button" target="_blank">Acceso Usuario<br> <small>http://cabsanmartin.herokuapp.com</small></a>
-          <img src="images/home.png" class="img-responsive" alt="Responsive image">
+          <img src="images/home.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
         </div>
       </div>
       <div class="col-md-5">
         <h3 class="text-center">Administrador</h3>
         <div class="row text-center">
           <a href="http://cabsanmartin.herokuapp.com/admin" class="btn btn-primary btn-lg" role="button" target="_blank">Acceso Administrador<br><small>http://cabsanmartin.herokuapp.com/admin</small></a>
-          <img src="images/admin-home.png" class="img-responsive" alt="Responsive image">
+          <img src="images/admin-home.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
         </div>
       </div>
     </div>
@@ -48,7 +57,7 @@
       </div>
       <div class="col-md-5">
         <div class="row text-center">
-          <img src="images/admin-home-novedades.png" class="img-responsive" alt="Responsive image">
+          <img src="images/admin-home-novedades.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
         </div>
       </div>
     </div>
@@ -68,26 +77,177 @@
       </div>
       <div class="col-md-5">
         <div class="row text-center">
-          <img src="images/admin-novedades.png" class="img-responsive" alt="Responsive image">
+          <img src="images/admin-novedades.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
         </div>
       </div>
     </div>
     <div class="row">
-    <div class="col-md-5 col-md-offset-1">
-      <p style="padding-top:277px;">
-        Al agregar o editar una novedad podemos de manera opcional:
-        <ol>
-          <li>Agregar una imágen (o seleccionar una ya subida al sistema)</li>
-          <li>Agregar un botón completando el campo texto y enlace</li>
-        </ol>
-      </p>
-    </div>
-    <div class="col-md-5">
-      <div class="row text-center">
-        <img src="images/admin-editar-novedad.png" class="img-responsive" alt="Responsive image">
+      <div class="col-md-5 col-md-offset-1">
+        <p style="padding-top:277px;">
+          Al agregar o editar una novedad podemos de manera opcional:
+          <ol>
+            <li>Agregar una imágen (o seleccionar una ya subida al sistema)</li>
+            <li>Agregar un botón completando el campo texto y enlace</li>
+          </ol>
+        </p>
+      </div>
+      <div class="col-md-5">
+        <div class="row text-center">
+          <img src="images/admin-editar-novedad.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+        </div>
       </div>
     </div>
+
+    <!-- Testimonios -->
+    <div class="row" id="testimonios">
+      <div class="col-md-5 col-md-offset-1" style="padding-top:77px;">
+        <h3>Testimonios</h3>
+        <p>
+          En la sección Testimonios se pueden cargar comentarios y reseñas realizadas por los clientes
+        </p>
+        <img src="images/home-testimonios.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+
+      </div>
+      <div class="col-md-5">
+        <div class="row text-center">
+          <img src="images/admin-testimonios.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+        </div>
+      </div>
     </div>
+
+    <!-- Aparts -->
+    <div class="row" id="aparts">
+      <div class="col-md-5 col-md-offset-1" style="padding-top:77px;">
+        <h3>Gestión de Aparts</h3>
+        <p>
+          La sección Apart en el administrador permite definir el nombre (1), sintesis (2), descripcion e imagenes de cada apart. Los 3 aparts ya están predefinidos, el sistema permite solo modificar esos datos.
+        </p>
+        <p>
+          Se pueden subir hasta 10 imágenes por cada apart, la primera imágen corresponde a la que se visualiza en la home (3). El precio que figura en la home se calcula automáticamente de acuerdo a lo ingresado en  <a href="#tarifas">Tarifas</a>.
+        </p>
+        <img src="images/home-aparts.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+      </div>
+      <div class="col-md-5">
+        <div class="row text-center">
+          <img src="images/admin-aparts.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Clientes -->
+    <div class="row" id="clientes">
+      <div class="col-md-5 col-md-offset-1" style="padding-top:77px;">
+        <h3>Gestión de Clientes</h3>
+        <p>
+          Aquellos usuarios que se suscriben al newsletter, queda guardado su email en la sección Clientes del administrador.
+        </p>
+        <img src="images/home-clientes.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+      </div>
+      <div class="col-md-5">
+        <div class="row text-center">
+          <img src="images/admin-clientes.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Contenidos -->
+    <div class="row" id="contenidos">
+      <div class="col-md-5 col-md-offset-1" style="padding-top:77px;">
+        <h3>Gestión de Cotenidos</h3>
+        <p>
+          Las páginas 'Nosotros' y 'San Martín de los Andes' pueden editarse desde la sección  'Contenidos'
+        </p>
+      </div>
+      <div class="col-md-5">
+        <div class="row text-center">
+          <img src="images/admin-contenidos.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Faqs -->
+    <div class="row" id="faqs">
+      <div class="col-md-5 col-md-offset-1" style="padding-top:77px;">
+        <h3>FAQs</h3>
+        <p>
+          En la sección FAQs se pueden cargar preguntas y respuestas frecuentes
+        </p>
+        <img src="images/home-faqs.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+
+      </div>
+      <div class="col-md-5">
+        <div class="row text-center">
+          <img src="images/admin-faqs.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Tipos de Alojamiento -->
+    <div class="row" id="tipo-alojamiento">
+      <div class="col-md-5 col-md-offset-1" style="padding-top:77px;">
+        <h3>Gestión de Tipos de Alojamiento</h3>
+        <p>
+          En esta sección se define cada tipo de alojamiento en cada Apart, la cantidad disponible para reservar (1) y la capacidad máxima de personas (2)
+        </p>
+      </div>
+      <div class="col-md-5">
+        <div class="row text-center">
+          <img src="images/admin-tipo-alojamiento.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Tipos de Alojamiento -->
+    <div class="row" id="tipo-alojamiento">
+      <div class="col-md-5 col-md-offset-1" style="padding-top:77px;">
+        <h3>Gestión de Tipos de Alojamiento</h3>
+        <p>
+          En esta sección se define cada tipo de alojamiento en cada Apart, la cantidad disponible para reservar (1) y la capacidad máxima de personas (2)
+        </p>
+      </div>
+      <div class="col-md-5">
+        <div class="row text-center">
+          <img src="images/admin-tipo-alojamiento.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarifas -->
+    <div class="row" id="tarifas">
+      <div class="col-md-5 col-md-offset-1" style="padding-top:77px;">
+        <h3>Gestión de Tarifas</h3>
+        <p>
+          En la sección 'Tarifas' se fijan las tarifas diarias en un rango de fechas, para un determinado tipo de alojamiento y para una determinada cantidad de pasajeros
+        </p>
+      </div>
+      <div class="col-md-5">
+        <div class="row text-center">
+          <img src="images/admin-tarifas.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Reservas -->
+    <div class="row" id="disponibilidad">
+      <div class="col-md-5 col-md-offset-1" style="padding-top:77px;">
+        <h3>Gestión de Disponibilidad/Reservas</h3>
+        <p>
+          Finalmente en la sección reservas, se fija la ocupación de cada unidad de tipo alojamiento en los distintos meses. Esto se traduce a mostrar si hay disponibilidad o no para un pasajero que busca alojamiento en un determinado rango de fechas.
+        </p>
+        <img src="images/home-reserva.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+
+      </div>
+      <div class="col-md-5">
+        <div class="row text-center">
+          <img src="images/admin-reservas.png" data-toggle="magnify" class="img-responsive" alt="Responsive image">
+        </div>
+      </div>
+    </div>
+
   </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="js/bootstrap-magnify.min.js"></script>
+
 </body>
 </html>
